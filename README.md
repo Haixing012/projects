@@ -1,6 +1,6 @@
 # projects
 
-这是一个基于 TypeScript + Vite + Tailwind CSS 的轻量级 Web 应用项目，由扣子编程 CLI 创建。
+这是一个基于 TypeScript + Vite + Tailwind CSS 的轻量级 Web 应用项目。
 
 ## 快速开始
 
@@ -236,4 +236,3 @@ console.log(apiUrl); // https://api.example.com
 2. **使用 TypeScript** 进行类型安全开发，避免使用 `any`
 3. **使用 Tailwind CSS** 进行样式开发，支持响应式和暗色模式
 4. **环境变量必须以 `VITE_` 开头** 才能在客户端代码中访问
-5. **开发时使用 `coze dev`**，支持热更新和快速刷新
