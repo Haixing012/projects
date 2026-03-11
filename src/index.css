@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 主题颜色 */
+  --primary-color: #1677ff;
+  --background-color: #0f172a;
+  --card-background: #1e293b;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+  --hover-color: #334155;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-color);
+}
+
+/* Ant Design 深色主题覆盖 */
+.ant-layout {
+  background: var(--background-color) !important;
+}
+
+.ant-layout-sider {
+  background: var(--card-background) !important;
+}
+
+.ant-layout-header {
+  background: var(--card-background) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ant-layout-content {
+  background: var(--background-color) !important;
+}
+
+.ant-menu {
+  background: var(--card-background) !important;
+}
+
+.ant-menu-dark {
+  background: var(--card-background) !important;
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-submenu-title {
+  color: var(--text-secondary) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-dark .ant-menu-submenu-selected {
+  background: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  color: #ffffff !important;
+}
+
+.ant-card {
+  background: var(--card-background) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.ant-card-head {
+  background: var(--card-background) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-card-head-title,
+.ant-card-body {
+  color: var(--text-primary) !important;
+}
+
+.ant-table {
+  background: var(--card-background) !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--card-background) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-table-tbody > tr > td {
+  background: var(--card-background) !important;
+  color: var(--text-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: var(--hover-color) !important;
+}
+
+.ant-btn-primary {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.ant-statistic-title {
+  color: var(--text-secondary) !important;
+}
+
+.ant-statistic-content {
+  color: var(--text-primary) !important;
+}
+
+.ant-input {
+  background: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-input:hover {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-select-selector {
+  background: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-modal-content {
+  background: var(--card-background) !important;
+}
+
+.ant-modal-header {
+  background: var(--card-background) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-modal-title,
+.ant-modal-body,
+.ant-modal-footer {
+  color: var(--text-primary) !important;
+}
+
+.ant-tabs-tab {
+  color: var(--text-secondary) !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-color) !important;
+}
+
+.ant-tag {
+  border: none !important;
+}
+
+/* 自定义工具类 */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
+}
+
+.text-error {
+  color: var(--error-color);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.card {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+/* Alert 组件样式优化 - 深色主题适配 */
+.ant-alert {
+  background: var(--card-background) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.ant-alert-warning {
+  background-color: #2b2100 !important;
+  border-color: #614700 !important;
+}
+
+.ant-alert-warning .ant-alert-message,
+.ant-alert-warning .ant-alert-description,
+.ant-alert-warning .ant-alert-icon {
+  color: #faad14 !important;
+}
+
+.ant-alert-error {
+  background-color: #2a0a0a !important;
+  border-color: #581717 !important;
+}
+
+.ant-alert-error .ant-alert-message,
+.ant-alert-error .ant-alert-description,
+.ant-alert-error .ant-alert-icon {
+  color: #ff4d4f !important;
+}
+
+.ant-alert-success {
+  background-color: #0f2b1a !important;
+  border-color: #135d38 !important;
+}
+
+.ant-alert-success .ant-alert-message,
+.ant-alert-success .ant-alert-description,
+.ant-alert-success .ant-alert-icon {
+  color: #52c41a !important;
+}
+
+.ant-alert-info {
+  background-color: #091936 !important;
+  border-color: #123e72 !important;
+}
+
+.ant-alert-info .ant-alert-message,
+.ant-alert-info .ant-alert-description,
+.ant-alert-info .ant-alert-icon {
+  color: #1890ff !important;
+}
